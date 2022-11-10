@@ -1,2 +1,6 @@
-<input type=" text" [(ngModel)] = "name">
+ <input type=" text" [(ngModel)] = "name"> <!--the directive lists input, would store it in name property -->
 <p> {{name}} </p>
+
+
+<!-- Can't bind to 'ngModel' since it isn't a known property of 'input'.
+need to import forms module from forms package in app.module file -->
