@@ -12,6 +12,9 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] //lists all the components that should be know to angualr when analysing index.html file
 })
 export class AppModule { }
+
+
+// app starts -> main.ts ->bootstrap ang app -> pass module as arg -> app-root selector
