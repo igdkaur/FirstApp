@@ -3,13 +3,19 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   //selector: '[app-users]', //attribute
   selector: '.app-users', //class
-  // templateUrl: './users.component.html',
-  template: '<app-user></app-user> ',
+   templateUrl: './users.component.html',
+  // template: '<app-user></app-user> ',
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
 
-  constructor() { }
+  allowNewUser = false;
+
+  constructor() { 
+    setTimeout(() => { 
+      this.allowNewUser =true;
+    },2000)
+  }
 
   ngOnInit(): void {
   }
