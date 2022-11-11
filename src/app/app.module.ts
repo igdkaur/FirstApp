@@ -4,12 +4,16 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
+  import { BlueComponent } from './blue/blue.component';
+import { RedComponent } from './red/red.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    UsersComponent        //comp registered
+    UsersComponent,
+    BlueComponent,
+    RedComponent        //comp registered
   ],
   imports: [
     BrowserModule,
