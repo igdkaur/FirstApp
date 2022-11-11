@@ -6,7 +6,15 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <p> blue component </p>
   `,
-  styleUrls: ['./blue.component.css']
+  //styleUrls: ['./blue.component.css']
+  styles: [
+    `
+    p {
+      padding: 10px;
+      border : 2px solid blue;
+    }
+    `
+  ]
 })
 export class BlueComponent implements OnInit {
 
@@ -16,3 +24,5 @@ export class BlueComponent implements OnInit {
   }
 
 }
+
+// add inline template and styles
