@@ -7,8 +7,11 @@ import { Component } from "@angular/core";
 })
 export class UserComponent{
   userId = 10;
-  userStatus = 'offline' ;
-  
+  userStatus = 'online' ;
+
+  getUserStatus(){
+    return this.userStatus;
+}  
 }
 
 
