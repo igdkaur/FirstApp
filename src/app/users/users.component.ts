@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   // template: '<app-user></app-user> ',
   styleUrls: ['./users.component.css']
 })
-export class UsersComponent implements OnInit {
 
+
+export class UsersComponent implements OnInit {
   allowNewUser = false;
+  userCreationStatus = 'No user was created';
 
   constructor() { 
     setTimeout(() => { 
@@ -20,6 +22,9 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onUserCreation() {
+    this.userCreationStatus = 'User was created';
+  }
 }
 
 

@@ -1,7 +1,16 @@
 
 <!-- <button class ="btn btn-primary" disabled > ADD USER </button> bind property by enclosing it square brackets -->
 
-<button class ="btn btn-primary" [disabled] = "!allowNewUser" > ADD USER </button>
+<button 
+  class ="btn btn-primary" 
+  [disabled] = "!allowNewUser"  
+  (click) = "onUserCreation()"> ADD USER </button> <!-- property binding uses square brackets,event binding uses pranthesis -->
+
+<!-- <p> {{ allowNewUser }}</p> -->
+
+<!-- <p [innerText] = "allowNewUser"> </p>  -->
+
+{{ userCreationStatus }}
 
 <app-user></app-user>
 <app-user></app-user>  
