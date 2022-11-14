@@ -2,7 +2,10 @@
 <!-- <button class ="btn btn-primary" disabled > ADD USER </button> bind property by enclosing it square brackets -->
 
 <label> Add User </label>
-<input type = "text" class = "form-control" (input) = "onUpdateUser($event)"/> 
+ <!-- <input type = "text" class = "form-control" (input) = "onUpdateUser($event)"/>   -->
+
+<input type = "text" class = "form-control" [(ngModel)] = "userName" /> 
+
 <p>
 {{ userName }} 
 </p>
