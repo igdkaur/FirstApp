@@ -9,9 +9,17 @@ export class UserComponent{
   userId = 10;
   userStatus = 'online' ;
 
+  constructor () {
+    this.userStatus = Math.random() > 0.5 ? 'online' : 'offline';
+  }
+
   getUserStatus(){
     return this.userStatus;
-}  
+  }  
+
+  getColor() {
+    return this.userStatus === 'online' ? 'green' : 'red';
+  }
 }
 
 
