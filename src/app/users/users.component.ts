@@ -10,11 +10,12 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class UsersComponent implements OnInit {
-  allowNewUser = true;
+  allowNewUser = false;
   userCreationStatus = 'No user was created';
   userName = 'gdk';
   // streetName = '';
   // isStreetNameEmpty = true;
+  userCreated = false;
 
   constructor() { 
     setTimeout(() => { 
@@ -26,6 +27,7 @@ export class UsersComponent implements OnInit {
   }
 
   onUserCreation() {
+    this.userCreated = true;
     this.userCreationStatus = 'User was created and the name of the user is ' + this.userName;
   }
 

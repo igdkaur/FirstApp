@@ -34,7 +34,8 @@
 
 <!-- <p [innerText] = "allowNewUser"> </p>  -->
 
- {{ userCreationStatus }}
+ <!-- {{ userCreationStatus }} -->
+ <p *ngIf="userCreated"> User was created, user name is {{ userName }}</p>
 
 <!-- <app-user></app-user>
 <app-user></app-user>   -->
