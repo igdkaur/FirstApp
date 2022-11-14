@@ -35,7 +35,10 @@
 <!-- <p [innerText] = "allowNewUser"> </p>  -->
 
  <!-- {{ userCreationStatus }} -->
- <p *ngIf="userCreated"> User was created, user name is {{ userName }}</p>
+ <p *ngIf="userCreated; else noUser"> User was created, user name is {{ userName }}</p>
+ <!-- <p> No User created </p> -->
+ <ng-template #noUser> <p> No User created </p> </ng-template>
+ 
 
 <!-- <app-user></app-user>
 <app-user></app-user>   -->

@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class UsersComponent implements OnInit {
   allowNewUser = false;
   userCreationStatus = 'No user was created';
-  userName = 'gdk';
+  userName = '';
   // streetName = '';
   // isStreetNameEmpty = true;
   userCreated = false;
