@@ -16,6 +16,7 @@ export class UsersComponent implements OnInit {
   // streetName = '';
   // isStreetNameEmpty = true;
   userCreated = false;
+  users = ['user1', 'user2'];
 
   constructor() { 
     setTimeout(() => { 
@@ -28,6 +29,7 @@ export class UsersComponent implements OnInit {
 
   onUserCreation() {
     this.userCreated = true;
+    this.users.push(this.userName);
     this.userCreationStatus = 'User was created and the name of the user is ' + this.userName;
   }
 

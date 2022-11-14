@@ -40,8 +40,8 @@
  <ng-template #noUser> <p> No User created </p> </ng-template>
  
 
-<app-user></app-user>
-<app-user></app-user>  
+<app-user *ngFor="let user of users"></app-user>
+
 
 <!-- ng generate component <compname> generates new component in app folder
 
