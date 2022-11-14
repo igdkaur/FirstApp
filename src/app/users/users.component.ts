@@ -24,7 +24,7 @@ export class UsersComponent implements OnInit {
   }
 
   onUserCreation() {
-    this.userCreationStatus = 'User was created';
+    this.userCreationStatus = 'User was created and the name of the user is' + this.userName;
   }
 
   onUpdateUser(event:Event) {
