@@ -1,2 +1,4 @@
 <!-- <p> User ID {{ userId }} and User status {{ userStatus }}  </p> -->
-<p [ngStyle]="{backgroundColor:getColor()}"> User ID {{ userId }} and User status {{ getUserStatus() }}  </p>
+<p [ngStyle]="{backgroundColor:getColor()}"
+[ngClass] = "{online: userStatus === 'online'}"
+> User ID {{ userId }} and User status {{ getUserStatus() }}  </p>
