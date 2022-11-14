@@ -13,6 +13,8 @@ export class UsersComponent implements OnInit {
   allowNewUser = false;
   userCreationStatus = 'No user was created';
   userName = 'gdk';
+  streetName = '';
+  isStreetNameEmpty = true;
 
   constructor() { 
     setTimeout(() => { 
@@ -23,14 +25,26 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onUserCreation() {
-    this.userCreationStatus = 'User was created and the name of the user is' + this.userName;
+  // onUserCreation() {
+  //   this.userCreationStatus = 'User was created and the name of the user is' + this.userName;
+  // }
+
+  // onUpdateUser(event:Event) {
+  //   // this.userName = event.target.value;  //target is of type input element, so add type explicitly
+  //   this.userName = (<HTMLInputElement>event.target).value;
+   
+  // }
+
+  onUpdateStreet(event:Event) {
+    this.streetName = (<HTMLInputElement>event.target).value;
   }
 
-  onUpdateUser(event:Event) {
-    // this.userName = event.target.value;  //target is of type input element, so add type explicitly
-    this.userName = (<HTMLInputElement>event.target).value;
-  }
+
+  // onStreetReset() {
+  //   this.streetName = '';
+  // }
+
+
 }
 
 

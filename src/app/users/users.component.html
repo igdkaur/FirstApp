@@ -1,29 +1,40 @@
 
 <!-- <button class ="btn btn-primary" disabled > ADD USER </button> bind property by enclosing it square brackets -->
 
-<label> Add User </label>
+<label> Add Street Name </label>
  <!-- <input type = "text" class = "form-control" (input) = "onUpdateUser($event)"/>   -->
 
-<input type = "text" class = "form-control" [(ngModel)] = "userName" /> 
-
+<!-- <input type = "text" class = "form-control" [(ngModel)] = "userName" /> -->
 <!-- <p>
 {{ userName }} 
-</p> -->
+</p> --> 
+<hr>
+<input type = "text" class = "form-control" [(ngModel)] = "streetName" /> 
+<p>
+{{ streetName }} 
+</p>
 
 
 <button 
   class ="btn btn-primary" 
+  [disabled] = "streetName === ''"  
+  (click) = "streetName = '' "> RESET STREET </button> 
+
+<!-- <button 
+  class ="btn btn-primary" 
   [disabled] = "!allowNewUser"  
-  (click) = "onUserCreation()"> ADD USER </button> <!-- property binding uses square brackets,event binding uses pranthesis -->
+  (click) = "onUserCreation()"> ADD USER </button>  -->
+  
+  <!-- property binding uses square brackets,event binding uses pranthesis -->
 
 <!-- <p> {{ allowNewUser }}</p> -->
 
 <!-- <p [innerText] = "allowNewUser"> </p>  -->
 
-{{ userCreationStatus }}
+<!-- {{ userCreationStatus }}
 
 <app-user></app-user>
-<app-user></app-user>  
+<app-user></app-user>   -->
 
 <!-- ng generate component <compname> generates new component in app folder
 
