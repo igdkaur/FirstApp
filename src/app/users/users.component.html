@@ -1,6 +1,13 @@
 
 <!-- <button class ="btn btn-primary" disabled > ADD USER </button> bind property by enclosing it square brackets -->
 
+<label> Add User </label>
+<input type = "text" class = "form-control" (input) = "onUpdateUser($event)"/> 
+<p>
+{{ userName }} 
+</p>
+
+
 <button 
   class ="btn btn-primary" 
   [disabled] = "!allowNewUser"  
@@ -18,3 +25,10 @@
 <!-- ng generate component <compname> generates new component in app folder
 
 ng g c <componentname>  -->
+
+ <!-- 13 event binding using $ 
+add a label and input field
+- enter the name of the user to be created 
+-to output what user enter - $event
+dollar sign event will  be the data emitted with that event.
+ -->
