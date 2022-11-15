@@ -1,11 +1,11 @@
 
 <!-- <button class ="btn btn-primary" disabled > ADD USER </button> bind property by enclosing it square brackets -->
 
-<label> Add Street Name </label>
+<!-- <label> Add Street Name </label> -->
  <!-- <input type = "text" class = "form-control" (input) = "onUpdateUser($event)"/>   -->
 
-<input type = "text" class = "form-control" [(ngModel)] = "userName" />
-<hr>
+<!-- <input type = "text" class = "form-control" [(ngModel)] = "userName" />
+<hr> -->
  <!-- <p>
 {{ userName }} 
 </p>  -->
@@ -21,12 +21,12 @@
   [disabled] = "streetName === ''"  
   (click) = "streetName = '' "> RESET STREET </button>  -->
 
-<button 
+<!-- <button 
   class ="btn btn-primary" 
   [disabled] = "!allowNewUser"  
   (click) = "onUserCreation()"> ADD USER </button> 
 
-<hr>
+<hr> -->
   
   <!-- property binding uses square brackets,event binding uses pranthesis -->
 
@@ -35,12 +35,14 @@
 <!-- <p [innerText] = "allowNewUser"> </p>  -->
 
  <!-- {{ userCreationStatus }} -->
- <p *ngIf="userCreated; else noUser"> User was created, user name is {{ userName }}</p>
+ <!-- <p *ngIf="userCreated; else noUser"> User was created, user name is {{ userName }}</p> -->
  <!-- <p> No User created </p> -->
- <ng-template #noUser> <p> No User created </p> </ng-template>
+ <!-- <ng-template #noUser> <p> No User created </p> </ng-template> -->
  
 
-<app-user *ngFor="let user of users"></app-user>
+<!-- <app-user *ngFor="let user of users"></app-user> -->
+<!-- <app-task-three></app-task-three> -->
+ <app-task-three ></app-task-three>
 
 
 <!-- ng generate component <compname> generates new component in app folder

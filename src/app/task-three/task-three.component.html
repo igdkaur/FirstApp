@@ -2,8 +2,9 @@
 <button (click) = "onButtonClick()"> Display Details</button>
 <br>
 <br>
-<p *ngIf="hideParagraph; else hide">task-three is not hidden </p>
+<p *ngIf="hideParagraph; else hide" >task-three is not hidden</p>
 
 
 
-<ng-template #hide>  </ng-template>
+<ng-template #hide> </ng-template>
+<div *ngFor="let click of clicks">{{click}}</div>

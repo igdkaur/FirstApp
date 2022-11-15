@@ -7,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskThreeComponent implements OnInit {
   hideParagraph = true;
-
+  counter = 0;
+  clicks = [];
   constructor() { }
 
   ngOnInit(): void {
   }
 
   onButtonClick (){
+    this.counter = this.counter + 1;
+    this.clicks.push(this.counter);
     this.hideParagraph = !this.hideParagraph;
 
   }
