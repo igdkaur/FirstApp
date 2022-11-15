@@ -6,6 +6,7 @@ import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
   import { BlueComponent } from './blue/blue.component';
 import { RedComponent } from './red/red.component';
+import { TaskThreeComponent } from './task-three/task-three.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { RedComponent } from './red/red.component';
     UserComponent,
     UsersComponent,
     BlueComponent,
-    RedComponent        //comp registered
+    RedComponent,
+    TaskThreeComponent        //comp registered
   ],
   imports: [
     BrowserModule,
